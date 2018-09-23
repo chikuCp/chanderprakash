@@ -1,0 +1,235 @@
+:root{
+    --brightYello: #E38505;
+    --darkBrown: #bb9457;
+    --black: #191919;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans',sans-serif;
+    color: var(--black);
+    background: linear-gradient(rgba(255,255,255,0.89),rgba(255,255,255,0.89)) , url('../images/abstract-ancient-antique-235985.jpg');
+}
+
+/* Global Style */
+.bell-fonts{
+    font-family: 'La Belle Aurore',cursive;
+}
+
+
+/* section padding */
+.section-padding{
+    padding: 3rem 0;
+}
+
+
+/* Grid Container  */
+.grid-container{
+    max-width: 90vw;
+    margin: 2rem auto;
+    display: grid;
+    grid-row-gap: 2rem;
+}
+
+@media screen and (min-width: 768px){
+    .grid-container-medium-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 4rem;
+    }
+}
+/* Global style ends */
+/* preloader */
+
+.preloader{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #57b8bb;
+    z-index: 999;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header */
+.header{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: auto;
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        background: url('../images/book-computer-design-326424.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    .video_container{
+        display: none;
+    }
+}
+
+@media screen and (min-height: 968px){
+    .header{
+        background: url('../images/book-computer-design-326424.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    .video_container{
+        display: none;
+    }
+}
+/* header ends */
+
+/* banner */
+.banner{
+    text-align: center;
+    z-index: 3;
+}
+
+.banner_title{
+    font-size: 4rem;
+    color: rgb(88, 150, 186);
+}
+
+@media screen and (min-width: 768px){
+    .banner_title{
+        font-size: 9rem;
+    }
+}
+
+/* social icons */
+.banner_social-icon{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border: 0.1rem solid #191919;
+    border-radius: 50%;
+    padding: 0.25rem;
+    transition: all 0.5s linear;
+    background: #332525;
+}
+
+.banner_social-icon:hover{
+    background: salmon;
+    color: white;
+}
+
+.banner_icons{
+ width: 50%;
+ margin: 0 auto;
+ display: grid;
+ grid-template-columns: repeat(5,2rem);
+ grid-column-gap: 0.5rem;
+ justify-content: center;
+}
+
+.video_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    bottom: 0;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video_item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+
+/* navigation buttons */
+
+.navBtn{
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    font-size: 2.5rem;
+    color: #57b8bb;
+    cursor: pointer;
+    animation: pulse 3s  infinite  ;
+}
+
+/* animation */
+@keyframes pulse{
+    0%{
+        transform: scale(1)
+    }
+    50%{
+        transform: scale(1.2)
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+
+/* navigation menu */
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(88, 150, 186,0.7);
+    z-index: 3;
+}
+.nav_links{
+    list-style-type: none;
+}
+
+.profile_pic{
+    border-radius: 2.5rem;
+    width: 85%;
+}
+
+.nav_single_link{
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: silver;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+/* toggling nav button */
+.nav{
+    width: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+.nav_show{
+    width: 8rem;
+}
+
+
+
+
+/* about */
+.about_img_item{
+    width: 100%;
+    display: block;
+}
