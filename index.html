@@ -66,46 +66,82 @@
     </div>
     <!-- Header Ends -->
 
-<!-- about -->
-<section class="about section-padding" id="about">
-    <div class="grid-container grid-container-medium-2">
-        <!-- about container -->
-        <article class="about-container">
-            <!-- first child -->
-            <div class="section-title">
-                <h1 class="section-title_name bell-fonts">Skill : HTML</h1>
-                <h3 class="section-title_level bell-fonts">Level : Advance</h3>
-                <div class="section-title_underline"></div>
-                <p class="section-title_text">I started to code Html </p>
+  
+    <div class="section white-bg ">
+
+        <div class="section-content" >
+                <div class="title">
+                    <h1 class="white-bg-h1">Skillset</h1>
+                    <img src="images/55935574-skills-set-icon-suitable-for-info-graphics-websites-and-print-media-and-interfaces-line-vector-icon-.jpg" width="100px" alt="skill icon">
+                </div>
+            
+                <div class="content">
+                    <div>
+                        <div class="dual-col">
+                            <h2>HTML</h2>
+                            <div class="skill-progress-container">
+                                <div class="skill-progressbar" style="width:80%"></div>
+                            </div>
+                        </div>
+            
+                        <div class="dual-col">
+                            <h2>CSS3</h2>
+                            <div class="skill-progress-container">
+                                <div class="skill-progressbar" style="width:70%"></div>
+                            </div>
+                        </div>
+            
+                        <div class="dual-col">
+                            <h2>Javascript</h2>
+                            <div class="skill-progress-container">
+                                <div class="skill-progressbar" style="width:60%"></div>
+                            </div>
+                        </div>
+            
+                        <div class="dual-col">
+                            <h2>BootStrap3</h2>
+                            <div class="skill-progress-container">
+                                <div class="skill-progressbar" style="width:60%"></div>
+                            </div>
+                        </div>
+            
+                        <div class="dual-col">
+                            <h2>Jquery</h2>
+                            <div class="skill-progress-container">
+                                <div class="skill-progressbar" style="width:50%"></div>
+                            </div>
+                        </div>
+            
+                        <div class="dual-col">
+                            <h2>Node JS</h2>
+                            <div class="skill-progress-container">
+                                <div class="skill-progressbar" style="width:40%"></div>
+                            </div>
+                        </div>
+            
+                        <div class="dual-col">
+                            <h2>My SQL</h2>
+                            <div class="skill-progress-container">
+                                <div class="skill-progressbar" style="width:60%"></div>
+                            </div>
+                        </div>
+            
+                        <div class="dual-col">
+                            <h2>React JS</h2>
+                            <div class="skill-progress-container">
+                                <div class="skill-progressbar" style="width:40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- second child -->
-            <div class="about_img ">
-                <img src="images/html.png" alt="html" class="about_img_item">
-            </div>
-        </article>
+</div>
 
 
-        <article class="about-container">
-            <!-- first child -->
-            <div class="section-title">
-                <h1 class="section-title_name bell-fonts">Skill : CSS</h1>
-                <h3 class="section-title_level bell-fonts">Level : Advance</h3>
-                <div class="section-title_underline"></div>
-                <p class="section-title_text">I started to code Css</p>
-            </div>
-            <!-- second child -->
-            <div class="about_img about_img_special">
-                <img src="images/CSS-Tutorial-in-Hindi.jpg" alt="html" class="about_img_item">
-            </div>
-        </article>
-    </div>
-</section>
-
-<!-- conect for work -->
+<!-- contect for work -->
 <section class="contact section-padding" id="contact">
     <div class="grid-container">
-        <form action="" class="contact-form">
-            <p class="contact-form-feedback">text goes here</p>
+        <form action="" class="contact-form" name="contact-form">
             <h3 class="contact-form-title bell-fonts">Contact for freelance projects</h3>
             <div class="contact-form-input">
                 <input type="text" name="" id="" maxlength="30" class="input-name" placeholder="Name">
@@ -120,7 +156,8 @@
                 <textarea name="" id="project-details" cols="30" rows="10" class="input-projectdetails" placeholder="Enter Project Details Here"></textarea>
             </div>
 
-            <input type="submit" value="Submit" class="input-submit">
+            <input type="submit" value="Submit" class="input-submit" onclick="submitForm()">
+            <p class="contact-form-feedback">text goes here</p>
         </form>
 
 
