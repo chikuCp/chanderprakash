@@ -42,8 +42,37 @@ body{
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 4rem;
     }
+    .grid-container{
+        max-width: 75vw;
+    }
 }
-/* Global style ends */
+
+.section-title_name {
+    font-size: 3rem;
+}
+
+.section-title{
+    padding: 1rem 0.5rem;
+    text-transform: capitalize;
+}
+
+.section-title_level{
+    font-size: 1.5rem;
+}
+
+.section-title_underline{
+    background: #E38505;
+    width: 5rem;
+    height: 0.25rem;
+}
+
+.section-title_text{
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    color: gray;
+}
+
 /* preloader */
 
 .preloader{
@@ -229,7 +258,80 @@ body{
 
 
 /* about */
+
+.about-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr;
+    grid-gap: 2rem;
+
+}
+
 .about_img_item{
     width: 100%;
     display: block;
+    height: 100%;
+    border-radius: 0.25rem;
 }
+
+@media screen and (min-width: 768px){
+    .about_img_special{
+        order: -1;
+    }
+
+    .about-container{
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+/* contact section */
+.contact{
+    background: rgb(56, 140, 181);
+    color: white;
+    text-transform: capitalize;
+}
+
+.contact-form{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: center;
+    grid-row-gap: 1.25rem;
+}
+
+.contact-form-feedback{
+    border: 0.1rem solid #b64e53;
+    padding: 0.25rem;
+    display: none;
+}
+
+.error{
+    display: block;
+    color: red;
+    border-color: red;
+}
+
+.sucess{
+    display: block;
+    color: green;
+    border-color: green;
+}
+
+.contact-form-title{
+    font-size: 2rem;
+}
+
+.input-name,.input-lastname,.input-email,.input-projectdetails{
+    width: 100%;
+}
+
+.input-name,.input-lastname,.input-email,.input-projectdetails,.input-submit{
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background: white;
+    color: gray;
+    border: none;
+    outline: none;
+}
+
